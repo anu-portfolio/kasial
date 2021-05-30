@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/1043a60a6e.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/bootstrap.css">
@@ -16,33 +15,43 @@
 
   <!-- Navbar -->
 
-  <nav class="navbar navbar-expand-md navbar-light">
-    <div class="container">
-        <img src="img/kasial_logo.png" alt="logo" width="150" class="img-fluid">
-        <blockquote class="text-pink d-none d-lg-block blockquote name">"professional makeup artist"</blockquote>
+  <nav class="navbar navbar-expand-md navbar-light header-container">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a href="index.html" class="index-link">home</a>
-          </li>
-          <li class="nav-item">
-            <a href="services.html" class="index-link">services</a>
-          </li>
-
-          <li class="nav-item">
-            <a href="about.html" class="index-link">about</a>
-          </li>
-          <li class="nav-item">
-            <a href="contact.html" class="index-link active-link">contact</a>
-          </li>
-        </ul>
+      <button class="btn btn-pink btn-lg btn-book">book an appointment</button>
+      <img src="img/kasial_logo.png" alt="logo" width="400" class="img-fluid">
+      <div class="navlist">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="index.html" class="index-link">home</a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <a href="#" class="dropdown-toggle index-link" data-toggle="dropdown">services</a>
+                <div class="dropdown-menu">
+                    <a href="services.html" class="dropdown-item">all</a>
+                    <a href="hairstyle.html" class="dropdown-item">hair</a>
+                    <a href="skincare.html" class="dropdown-item">skin</a>
+                    <a href="makeup.html" class="dropdown-item">makeup</a>
+                    <a href="nails.html" class="dropdown-item">nails</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="index-link">about</a>
+            </li>
+            <li class="nav-item">
+              <a href="shop.html" class="index-link">shop</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="index-link active-link">contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
   </nav>
-
 
 <!-- contact -->
 <section id="contact">
@@ -50,19 +59,37 @@
   <div class="container">
 
     <div class="row">
-      <div class="col-md-1"></div>
-      <div class="col-md-4 mb-5">
-        <img src="img/contact.jpg" alt="" class="img-fluid mt-5 rounded-circle">
-        <h1 class="text-pink my-5 text-center">contact me to create your perfect style..</h1>
+
+      <div class="col-md-6 mb-5">
+        <img src="img/contact.jpg" alt="" class="contact-img mt-5 rounded-circle">
+      </div>
+      <div class="col-md-6 my-5">
+        <div class="contact-details text-center">
         <h2 class="mb-2 mt-5 text-pink">address</h2>
         <p>123 street name,city_name,<br>state_name 123456</p>
         <h2 class="mb-2 mt-5 text-pink">email</h2>
         <p>kasial@makeupartistry.com</p>
         <h2 class="mb-2 mt-5 text-pink">phone</h2>
         <p>123.456.7890</p>
+        <h1 class="text-pink my-5 text-center">upgrade your beauty to next level</h1>
+        </div>
+      </div>
 
-  </div>
-      <div class="col-md-7">
+</div>
+</div>
+</section>
+<!-- ***** Booking Modal ***** -->
+
+<div class="modal" id="book-modal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title mx-3">book your appointment today !</h5>
+        <button type="button" class="close" data-dismiss="modal" arial-label="close">
+          <span area-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
         <div class="form-container m-5">
 
               <div class="row mt-5 mx-5">
@@ -103,24 +130,28 @@
             </div>
 
             <div class="row mt-5 mx-5">
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="form-group">
                 <input type="text" class="form-control form-control-lg" placeholder="event date">
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-6">
               <div class="form-group">
                 <input type="text" class="form-control form-control-lg" placeholder="event time">
               </div>
             </div>
-            <div class="col-md-4">
-              <div class="form-group">
-                <input type="text" class="form-control form-control-lg" placeholder="venue">
-              </div>
-            </div>
+
           </div>
 
-          <div class="row mt-5 mx-5">
+        <div class="row mt-5 mx-5">
+          <div class="col">
+            <div class="form-group">
+              <input type="text" class="form-control form-control-lg" placeholder="venue">
+            </div>
+          </div>
+        </div>
+
+          <div class="row my-5 mx-5">
           <div class="col">
             <div class="form-group">
               <textarea class="form-control form-control-lg" rows="5" placeholder="your message.."></textarea>
@@ -128,39 +159,24 @@
         </div>
         </div>
 
-        <div class="row my-5 mx-5">
-            <div class="col">
-              <div class="form-group">
-                <button class="btn btn-outline-pink btn-block">send</button>
-            </div>
         </div>
 
       </div>
-      </div>
-      </div>
+      <div class="modal-footer">
+        <button class="btn btn-modal btn-submit" data-dismiss="modal">submit</button>
 
+      </div>
+    </div>
+  </div>
 </div>
-</section>
-
-  <footer id="main-footer" class="text-center bg-darkpink">
-      <div class="row pt-5 pb-3">
-        <div class="col text-white">
-          <i class="fab fa-twitter-square fa-2x m-3"></i>
-          <i class="fab fa-facebook-square fa-2x m-3"></i>
-          <i class="fab fa-instagram-square fa-2x m-3"></i>
-        </div>
-      </div>
-      <div class="row pb-5">
-        <div class="col text-white">
-          <p class="footer-text">&copy;<span id="year"></span>kasial. professional makeup artist. all rights reserved. |   123 street name   •   city name, state 123456   |   123.456.7890   |   kasial@makeupartistry.com</p>
-        </div>
-      </div>
-  </footer>
+<!-- Footer -->
+<div id="footer"></div>
 
     <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha256-zUQGihTEkA4nkrgfbbAM1f3pxvnWiznBND+TuJoUv3M=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1043a60a6e.js" crossorigin="anonymous"></script>
     <script>
     // Display Year
     $('#year').text(new Date().getFullYear());
@@ -171,5 +187,6 @@
       slideToScroll:1
     });
     </script>
+    <script src="script.js"></script>
 </body>
 </html>

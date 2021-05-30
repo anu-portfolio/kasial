@@ -1,0 +1,172 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header{
+  background-image: url('img/cart_bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height : 200px;
+  position : relative;
+}
+.overlay{
+  position : absolute;
+  z-index: 1;
+  top:0;
+  bottom:0;
+  right : 0;
+  left : 0;
+  margin : 0;
+  padding : 0;
+  height : 100%;
+  background-color: rgba(112,1,94,0.2);
+}
+nav{
+  position : absolute;
+  z-index : 2;
+  top : 0;
+  left : 0;
+  right : 0;
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: space-between;
+  padding : 50px 60px 0 60px;
+}
+.cart{
+
+}
+.fa-shopping-cart{
+  margin-right: 5px;
+}
+h2{
+  color : #fff;
+}
+nav li {
+   font-size: 20px;
+   list-style: none;
+   display: inline-block;
+   padding-right: 10px;
+   padding-left: 10px;
+}
+nav li a {
+  text-decoration: none;
+  color : #fff;
+}
+.container{
+  margin : 70px;
+}
+.skincare, .cosmetics{
+  display: flex;
+}
+.prd_name{
+  color : #70015e;
+}
+.prd_price{color : #bd0083;}
+
+.image{
+  width : 200px;
+  position:relative;
+  overflow : hidden;
+  margin : 20px;
+}
+.image img{
+  width : 100%;
+  margin-bottom: 10px;
+}
+
+.add-cart{
+  position: absolute;
+  bottom : 55px;
+  width: 100%;
+  background-color: #c461ad;
+  padding : 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  color : #fff;
+  font-size: 20px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.image:hover .add-cart{
+  opacity : 1;
+}
+
+/* --------------- CART PAGE --------------- */
+
+.product-container{
+  max-width: 650px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin : 0 auto;
+  margin-top: 50px;
+}
+
+.product-header{
+  width : 100%;
+  max-width : 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid #eee;
+  margin : 0 auto;
+  color : #70015e;
+}
+
+.title{
+  width : 50%;
+}
+.price{
+  width : 15%;
+}
+.quantity{
+  width : 20%;
+}
+
+.products{
+  max-width: 650px;
+  width:100%;
+
+}
+.item{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  padding : 10px 0;
+}
+.item-name{
+  width:50%;
+  display: flex;
+  align-items: center;
+}
+.item-image{
+  margin : 0 10px;
+  height : 100px;
+}
+.item-price{
+  width:15%;
+}
+.item-quantity{
+  width:20%;
+}
+.fas{
+  cursor: pointer;
+}
+.fa-times-circle{
+  color : #bd0083;
+}
+.fa-chevron-circle-left,
+.fa-chevron-circle-right{
+  color : #c461ad;
+}
+.basketTotal{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 10px;
+}

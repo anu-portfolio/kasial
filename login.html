@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" integrity="sha256-3h45mwconzsKjTUULjY+EoEkoRhXcOIU4l5YAw2tSOU=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha256-etrwgFLGpqD4oNAFW08ZH9Bzif5ByXK2lXNHKy7LQGo=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>login & register form</title>
+</head>
+<body>
+  <header class="checkout-header">
+    <img src="img/kasial_logo.png" alt="logo" class="login-logo">
+    <!-- <nav class="bread-crumbs">
+      <a href="cart.html">cart</a><span>> login</span>
+    </nav> -->
+  </header>
+  <ul>
+    <li class="cart" style="display:none"><span>0</span></li>
+  </ul>
+<div class="login-page">
+<div class="box">
+  <div class="left">
+    <h3>new user ?</h3>
+    <button type="button" class="register-btn">register</button>
+  </div>
+  <div class="right">
+    <h3>existing user ?</h3>
+    <button type="button" class="login-btn">login</button>
+  </div>
+<div class="form">
+  <!-- login form start -->
+  <div class="login-form">
+    <h3>log in</h3>
+    <div class="form-group">
+      <input type="email" placeholder="email address *" class="form-control" id="email-login" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <input type="password" placeholder="password*" class="form-control" id="pwd-login" autocomplete="off">
+    </div>
+    <div class="form-group">
+      <label>
+        <input type="checkbox"> remember me
+      </label>
+    </div>
+    <p class="empty">** please enter all required values **</p>
+    <p class="invalid">** invalid username or password **</p>
+    <button type="button" class="submit-btn login-submit-btn">login</button>
+    <!-- <a href="#" class="register-btn">register</a> -->
+  </div>
+  <!-- login form end -->
+  <!-- register form start -->
+  <div class="register-form form-hidden">
+    <h3>register</h3>
+    <div class="form-group">
+      <input type="text" placeholder="first name*" class="form-control" id="first-name" autocomplete="off" required>
+    </div>
+    <div class="form-group">
+      <input type="text" placeholder="last name*" class="form-control" id="last-name" autocomplete="off" required>
+    </div>
+    <div class="form-group">
+      <input type="email" placeholder="email*" class="form-control" id="email-input" autocomplete="off" required>
+    </div>
+    <div class="form-group">
+      <input type="password" placeholder="password*" class="form-control" id="pwd-input" autocomplete="off" required>
+    </div>
+    <p class="empty">** please enter all required values **</p>
+    <button type="button" class="submit-btn register-submit-btn">register</button>
+    <!-- <a href="#" class="login-btn">login</a> -->
+  </div>
+<!-- register form end -->
+</div>
+
+</div>
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js" integrity="sha256-zUQGihTEkA4nkrgfbbAM1f3pxvnWiznBND+TuJoUv3M=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/1043a60a6e.js" crossorigin="anonymous"></script>
+    <script>
+    // Display Year
+    $('#year').text(new Date().getFullYear());
+    </script>
+  <script src="script.js"></script>
+
+  </body>
+  </html>
