@@ -414,7 +414,8 @@ if(registerSubmitBtn){
       document.querySelector(".empty").style.display="block";
     }
     else {
-      window.location.pathname = "/checkout.html";
+      document.querySelector(".register-form a").setAttribute("href","checkout.html");
+      // window.location.pathname = "https://anu-portfolio.github.io/kasial/checkout.html";
     }
   });
 }
@@ -428,7 +429,7 @@ if (loginSubmitBtn){
     const pwd = localStorage.getItem('pwd');
 
     if ((emailLogin === email ) && (pwdLogin === pwd)){
-      window.location.pathname = "/checkout.html";
+      document.querySelector(".login-form a").setAttribute("href","checkout.html");
     } else {
       document.querySelector(".invalid").style.display="block";
     }
